@@ -19,10 +19,21 @@ const JsUser = {
   console.log(JsUser.email)
   console.log(JsUser["email"])
   console.log(JsUser.email)
-  console.log(typeof JsUser[mySym])
+  console.log(JsUser[mySym])
 
   JsUser.email= "ttttttttt"
-  object.freeze(JsUser)
+  //Object.freeze(JsUser);
   JsUser.email = "oooahsdhfhsabfb"
   console.log(JsUser);
  
+
+  JsUser.greeting= function () {
+         console.log("Hello js user");
+  }
+
+  JsUser.greetingTwo= function () {
+    console.log(`Hello js user, ${this.name}`);
+}
+
+  console.log(JsUser.greeting());
+  console.log(JsUser.greetingTwo());
