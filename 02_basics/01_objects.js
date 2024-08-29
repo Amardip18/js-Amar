@@ -8,7 +8,7 @@ const JsUser = {
     name : "amardeep.com",
     age : 18,
     location : "jupitar",
-    mySym : "mykey1",
+   [ mySym ]: "mykey1",
     email: "amardeep@gmail.com",
     isLoggedIn : false,
     lastLoginDays : ["Momday", "saturday"]
@@ -19,5 +19,10 @@ const JsUser = {
   console.log(JsUser.email)
   console.log(JsUser["email"])
   console.log(JsUser.email)
-  console.log(typeof JsUser.mySym)
+  console.log(typeof JsUser[mySym])
+
+  JsUser.email= "ttttttttt"
+  object.freeze(JsUser)
+  JsUser.email = "oooahsdhfhsabfb"
+  console.log(JsUser);
  
