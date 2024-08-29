@@ -53,3 +53,4 @@ console.log(Object.values(tinderUser)); // access values of Objects
 console.log(Object.entries(tinderUser)); // retunr in the form of array and as a nested array
 
 console.log(tinderUser.hasOwnProperty(`isLoggedIn`));
+
