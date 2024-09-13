@@ -30,7 +30,7 @@ console.log(mmm);
      console.log(key, ':-', value);
 }*/
 
-const myObject = {   // ---> Object is not iterable
+const myObject = {   // ---> Object is not iterable in (for of) loop 
     game1: 'NFS',
     game2: 'Spiderman'
 }
