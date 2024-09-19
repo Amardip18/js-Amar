@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>It's Amar here</title>
 </head>
-<body style="background-color: black; color: #fff;">
+<body style="background-color: #212121; color: #fff;">
     <ul class="language">
         <li>Javascript</li>
     </ul>
 </body>
 <script>
-    function addlanguage(langName) {
+    function addLanguage(langName){
         const li = document.createElement('li');
         li.innerHTML = `${langName}`
-        document.querySelector('.language').
-        appendChild(li)
+        document.querySelector('.language').appendChild(li)
     }
     addLanguage("python")
-    addLanguage("Ruby")
+    addLanguage("typescript")
 </script>
 </html>
