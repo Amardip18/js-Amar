@@ -6,10 +6,23 @@
     <title>Amar's Code</title>
 </head>
 <body style="background-color: #212121; color: #fff;">
-    <div class="parent"></div>
+    <div class="parent">
         <div class="day">Monday</div>
         <div class="day">tuesday</div>
         <div class="day">Wednesday</div>
         <div class="day">Thursday</div>
+        
+      </div>
 </body>
+<script>
+    const parent=document.querySelector('.parent')
+    /*console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[1].innerHTML);*/
+    
+    for(let i=0 ; i< parent.children.length ;i++) {
+  console.log(parent.children[i].innreHTML);
+    }
+    
+    </script>
 </html>
